@@ -3,16 +3,11 @@
     padding: 0;
     margin: 0;
 }
-.container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
 .outlet {
-    flex: 1 1;
-    position: relative;
-    top: 6rem;
+    display: block;
+    align-content: start;
+    height: 100%;
+    margin-top: 1rem;
 }
 html, body {
     box-sizing: border-box;
@@ -26,5 +21,5 @@ body {
     text-align: center;
     font-family: "Open Sans", sans-serif;
     -webkit-font-smoothing: antialiased;
-    background: linear-gradient(#8de2dc 20%, #d7d683c9 50%, #1df1e0 95%);
+    background: linear-gradient(#dfe9e8 20%, #eeeee7c9 50%, #a0d4d0 95%);
 }

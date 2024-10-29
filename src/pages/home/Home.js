@@ -2,11 +2,7 @@ import React from "react";
 import "./home.scss"
 
 
-import iconNiños from "./niños.png";
-import iconWoman from "./woman.png";
-import iconMen from "./men.png";
-import iconTemp from "./temp.png";
-import iconOfer from "./ofer.png";
+
 const Home = () => {
   return (
  
@@ -21,7 +17,6 @@ const Home = () => {
             </div>
             <div className="home__jumbotrom-img">
               <img
-                // src={iconOfer}
                 className="home__categories-container-circle-img"
                 alt="Zapato Azul" />
             </div>
@@ -36,7 +31,6 @@ const Home = () => {
               </div>
               <div className="home__categories-circle">
                 <img
-                  src={iconOfer}
                   className="home__categories-circle-img"
                   alt="Zapato Azul" />
               </div>
@@ -47,7 +41,6 @@ const Home = () => {
               </div>
               <div className="home__categories-circle">
                 <img
-                  src={iconTemp}
                   className="home__categories-circle-img"
                   alt="Zapato Azul" />
               </div>
@@ -58,7 +51,6 @@ const Home = () => {
               </div>
               <div className="home__categories-circle">
                 <img
-                  src={iconWoman}
                   className="home__categories-circle-img"
                   alt="Zapato Azul" />
               </div>
@@ -67,12 +59,7 @@ const Home = () => {
               <div className="home__categories-title">
                 <span className="home__categories-text">Niños</span>
               </div>
-              <div className="home__categories-circle">
-                <img
-                  src={iconNiños}
-                  className="home__categories-circle-img"
-                  alt="Zapato Azul" />
-              </div>
+
             </div>
             <div>
               <div className="home__categories-title">
@@ -80,7 +67,6 @@ const Home = () => {
               </div>
               <div className="home__categories-circle">
                 <img
-                  src={iconMen}
                   className="home__categories-circle-img"
                   alt="Zapato Azul" />
               </div>

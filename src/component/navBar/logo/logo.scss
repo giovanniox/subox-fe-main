@@ -13,11 +13,7 @@
 }
 
 .logo {
-
-  @media screen and (max-width: 768px) {
-    scale: 54%;
-  }
-
+  scale: 54%;
   text-decoration: none;
   display: flex;
   z-index: 3;
