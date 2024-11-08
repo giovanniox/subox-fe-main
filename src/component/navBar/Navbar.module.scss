@@ -77,10 +77,10 @@ $background-navbar-closeWrapper: rgba(93, 86, 86, 0.6705882353);
 
 
     &_object {
-      background-image: -webkit-linear-gradient(top, rgba(106, 120, 223, 0.308) 1px, transparent 1px), -webkit-linear-gradient(left, rgba(6, 161, 239, 0.26) 1px, transparent 2px);
-      background-size: 1px 25px, 22px 1px;
-      transform: rotateX(80deg);
-      animation: moveUp 1s infinite linear;
+      background-image: -webkit-linear-gradient(top, rgb(120 106 223 / 31%) 1px, #65181800 1px), -webkit-linear-gradient(left, rgba(6, 161, 239, 0.26) 1px, transparent 2px);
+      background-size: 1px 27px, 31px 12px;
+      transform: rotateX(47deg);
+      animation: Navbar_moveUp__fp9Sd 1s infinite linear;
       width: 100%;
       height: 100%;
 

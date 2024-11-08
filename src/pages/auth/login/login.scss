@@ -15,7 +15,7 @@
     flex-direction: column;
     &-title {
         padding: 0.2rem 0px 0rem;
-        font-size: x-large;
+        font-size: larger;
         text-transform: math-auto;
         font-family: monospace;
         color: #4c76ce;
@@ -24,10 +24,11 @@
     &-instruction {
         width: 100%;
         padding: 1rem 0;
-        font-size: smaller;
         display: flex;
         align-items: center;
         color: #4a4a4a;
+        font-size: medium;
+
         span{
             flex:2;
         }
@@ -53,5 +54,6 @@
         font-size: small;
         text-transform: lowercase;
         font-family: monospace;
+        font-size: medium;
     }
 }
