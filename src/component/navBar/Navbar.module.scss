@@ -21,7 +21,6 @@ $background-navbar-closeWrapper: rgba(93, 86, 86, 0.6705882353);
   margin: 0.2rem;
   position: relative;
   z-index: 1;
-  justify-content: space-between;
   .navba_container_giHamburgerMenu,
   .navba_container_faRegUser {
     display: none;
@@ -44,6 +43,12 @@ $background-navbar-closeWrapper: rgba(93, 86, 86, 0.6705882353);
       display: flex;
       position: absolute;
       left: 1rem;
+    }
+    .navba_container_logo__container{
+      margin-left: 50%;
+      @media screen and (max-width: 320px) {
+        scale: 70%;
+      }
     }
   }
 
@@ -98,16 +103,20 @@ $background-navbar-closeWrapper: rgba(93, 86, 86, 0.6705882353);
     bottom: 0.3rem;
     position: relative;
     height: 60px;
+    margin-left: 10%;
   }
 
   &_panel__container {
     display: flex;
+    -webkit-user-select: none;
     user-select: none;
+    flex: 1;
+    justify-content: flex-end;
+
   }
 
   &_menu__container {
     user-select: none;
-
     @media screen and (max-width: 768px) {}
 
 
