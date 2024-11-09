@@ -4,10 +4,8 @@
     margin: 0;
 }
 .outlet {
-    display: block;
-    align-content: start;
-    height: 100%;
-    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
 }
 html, body {
     box-sizing: border-box;
@@ -16,10 +14,16 @@ html, body {
     display: flex;
     flex-direction: column;
 }
-
+#root{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0.5rem 0.5rem;
+}
 body {
     text-align: center;
     font-family: "Open Sans", sans-serif;
-    -webkit-font-smoothing: antialiased;
     background: linear-gradient(#dfe9e8 20%, #eeeee7c9 50%, #a0d4d0 95%);
+    
+
 }
