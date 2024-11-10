@@ -25,7 +25,7 @@ $tertiary-color: rgba(46, 30, 116, 0.337);
     border-radius: 100%;
   }
   &__categories-container {
-    background-color: rgb(106 141 136);
+    background-color:rgb(139 185 179);
     border-radius: 0.5rem;
     box-sizing: border-box;
     display: flex;
@@ -39,8 +39,8 @@ $tertiary-color: rgba(46, 30, 116, 0.337);
   }
   &__categories-container-circle-img {
     width: 100%;
-    margin: 2rem;
-    height: 60%;
+    height: 100%;
+  
   }
   &__categories-text {
   }
