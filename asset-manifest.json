@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/subox-fe-main/static/css/main.ac9e21f6.css",
+    "main.js": "/subox-fe-main/static/js/main.1382a6ac.js",
+    "static/media/outrunFuture.otf": "/subox-fe-main/static/media/outrunFuture.fb555d4ee3de8868db90.otf",
+    "static/media/slick.svg": "/subox-fe-main/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/subox-fe-main/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/subox-fe-main/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/subox-fe-main/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/subox-fe-main/index.html",
+    "main.ac9e21f6.css.map": "/subox-fe-main/static/css/main.ac9e21f6.css.map",
+    "main.1382a6ac.js.map": "/subox-fe-main/static/js/main.1382a6ac.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ac9e21f6.css",
+    "static/js/main.1382a6ac.js"
+  ]
+}
