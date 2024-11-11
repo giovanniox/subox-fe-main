@@ -17,10 +17,9 @@ const Home = () => {
       <div className="home__jumbotrom">
         <div className="home__jumbotrom-container">
           <div className="home__jumbotrom-sub">
-            <h1>publc</h1>
-            <h1>publc</h1>
-            <h1>publc</h1>
-            <button>Unirme Al Club</button>
+            <h5>¡Entrega Rápida y Calidad Garantizada!</h5>
+            <h3>Calidad y Precio en Cada Producto</h3>
+            <button>Compra Ofertas</button>
           </div>
           <div className="home__jumbotrom-img">
              <Carousel categories={categories} />
