@@ -1,0 +1,83 @@
+$colorContenedor: rgb(160, 207, 200);
+$secondary-color: rgba(209, 171, 90, 0.242);
+$tertiary-color: rgba(46, 30, 116, 0.337);
+$Text00Color: #e603ff;
+$Text01Color: #e603ff;
+$Button00Color: rgba(209, 171, 90, 0.242);
+
+.jumbotrom {
+  &__container {
+    @media screen and (max-width: 650px) {
+    flex-direction: column;
+    }
+    background-color: $colorContenedor;
+    border-radius: 0.5rem;
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem;
+    align-items: center;
+    
+  &__main-box {
+    @media screen and (max-width: 650px) {
+      width: 100vw;
+      }
+    flex: 1 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    width: 30%;
+
+    &__text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      text-transform: capitalize;
+      font-family: sans-serif;
+
+      &-00 {
+        font-size: small;
+        padding: 8px;
+        color: $Text00Color;
+      }
+
+      &-01 {
+        text-transform: uppercase;
+        font-size: larger;
+        padding: 1rem;
+        color: $Text01Color;
+      }
+    }
+
+    &__button {
+      width: max-content;
+      font-family: sans-serif;
+
+      &-00 {
+        padding: 6px 10px;
+        font-size: medium;
+        color: #f5e836;
+        border: 1px solid #3f5e7c;
+        border-radius: 0.5rem;
+        background-color: #696bc5;
+      }
+    }
+  }
+
+  &__main-carrusel {
+    @media screen and (max-width: 650px) {
+      width: 100vw;
+      }
+    width: 70%;
+    padding: 2rem;
+  }
+
+  }
+
+
+ 
+
+}

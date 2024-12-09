@@ -1,39 +1,49 @@
-import React from "react";
-import "./home.scss"
+import React, { useState, useEffect } from "react";
+import "./home.scss";
 import CategoryItem from "../../component/categoria/CategoryItem";
-import Carousel from "../../component/categoria/carousel/Carousel";
+import Jumbotrom from "./component/jumbotrom/jumbotrom";
 
 const Home = () => {
-  const categories = [
-    { title: "Ofertas", imgSrc:   "src/resource/img/categorias/categorias_fardos.png", altText: "Ofertas de zapatos" },
-    { title: "Temporada", imgSrc: "src/resource/img/categorias/categorias_fardos.png", altText: "Zapatos de temporada" },
-    { title: "Mujer", imgSrc:     "src/resource/img/categorias/categorias_fardos.png", altText: "Zapatos para mujer" },
-    { title: "Fardos", imgSrc:    "src/resource/img/categorias/categorias_fardos.png", altText: "Fardos" },
-  ];
+  const [categories, setCategories] = useState([]); // Estado para almacenar las categorías
+
+  // Función para obtener las categorías
+  const fetchCategories = async () => {
+    // Simula una API que devuelve las categorías
+    return [
+      { imgSrc: "https://via.placeholder.com/150", title: "Ofertas", altText: "Ofertas de zapatos" },
+      { imgSrc: "https://via.placeholder.com/150", title: "Temporada", altText: "Zapatos de temporada" },
+      { imgSrc: "https://via.placeholder.com/150", title: "Mujer", altText: "Zapatos para mujer" },
+      { imgSrc: "https://via.placeholder.com/150", title: "Fardos", altText: "Fardos" },
+    ];
+  };
+
+  // Carga las categorías cuando el componente se monta
+  useEffect(() => {
+    const loadCategories = async () => {
+      try {
+        const data = await fetchCategories();
+        setCategories(data); // Actualiza el estado con los datos obtenidos
+      } catch (error) {
+        console.error("Error al cargar las categorías:", error);
+      }
+    };
+
+    loadCategories();
+  }, []); // El array vacío asegura que esto solo se ejecute una vez
 
   return (
-
     <div className="home">
-      <div className="home__jumbotrom">
-        <div className="home__jumbotrom-container">
-          <div className="home__jumbotrom-sub">
-            <h5>¡Entrega Rápida y Calidad Garantizada!</h5>
-            <h3>Calidad y Precio en Cada Producto</h3>
-            <button>Compra Ofertas</button>
-          </div>
-          <div className="home__jumbotrom-img">
-             <Carousel categories={categories} />
-          </div>
-        </div>
-      </div>
+      {/* JUMBOTROM */}
+      <Jumbotrom categories={categories} />
 
+      {/* CATEGORIES */}
       <div className="home__categories">
         <div className="home__categories-container">
           {categories.map((category, index) => (
             <CategoryItem
               key={index}
               title={category.title}
-              imgSrc={category.imgSrc}  
+              imgSrc={category.imgSrc}
               altText={category.altText}
             />
           ))}
